@@ -1,0 +1,75 @@
+1. Newton Second Law
+  Algoritma:
+  - deklarasikan massa benda berisi 600kg
+  - deklarasikan percepatan benda berisi 2m/s2
+  - hitung resultan gaya berisi massa benda dikali percepatan
+  - perlihatkan resultan gaya.
+
+  Pseudocode:
+
+  SET massa TO 600kg
+  SET percepatan TO 2m/s2
+  COMPUTE resultan TO massa times percepatan
+  SHOW resultan
+
+2. Tahun Kabisat
+  Algoritma:
+  - ambil nilai Tahun
+  - jika tahun habis dibagi 4 dan tidak habis dibagi 100, atau tahun habis dibagi 4 dan habis dibagi 100 dan habis dibagi 400
+  - maka tampilkan Tahun adalah tahun kabisat
+  - jika tidak
+  - maka tampilkan Tahun bukan tahun kabisat
+
+  Pseudocode:
+
+  READ Tahun
+  SET kondisi1 TO tahun % 4 == 0 AND tahun % 100 !=0
+  SET kondisi2 TO tahun % 4 == 0 AND tahun % 100 == 0 AND tahun % 400 == 0
+  IF kondisi1 OR kondisi2 THEN
+    DISPLAY Tahun adalah tahun kabisat
+  ELSE
+    DISPLAY Tahun bukan tahun kabisat
+  ENDIF
+
+3. Laundry Day
+  Algoritma:
+  - deklarasikan pakaian yang akan dicuci berisi 20
+  - deklarasikan pakaian yang ada di dalam mesin cuci berisi 0
+  - masukan semua pakaian yang ada di mesin cuci
+  - jika semua pakaian sudah dimasukkan ke dalam mesin dicuci
+  - maka nyalakan mesin cuci
+
+  Pseudocode:
+
+  SET pakaian TO 20
+  SET pakaianMesinCuci TO 0
+  WHILE pakaianMesinCuci < pakaian
+    COMPUTE pakaianMesinCuci + 1
+  ENDWHILE
+  IF pakaianMesinCuci == pakaian THEN
+    DISPLAY nyalakan mesin cuci
+  ELSE
+    DISPLAY semua pakaian belum masuk ke dalam mesin cuci
+  ENDIF
+
+4. Periksa Kuku
+  Algoritma:
+  - deklarasikan jumlah siswa/siswi yang akan diperiksa berisi 40
+  - periksa satu-satu siswa/siswi
+  - jika kukunya panjang
+  - maka siswa/siswi diberikan hukuman
+  - jika tidak
+  - maka siswa/siswi dipuji
+
+  Pseudocode:
+
+  SET jumlahSiswa = 40
+  SET periksaSiswa = 0
+  WHILE periksaSiswa < 40
+    IF kukuSiswa == panjang THEN
+      DISPLAY siswa diberi hukuman
+    ELSE
+      DISPLAY siswa diberi pujian
+    ENDIF
+    periksaSiswa + 1
+  ENDWHILE

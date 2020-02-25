@@ -7,8 +7,8 @@
 
   Pseudocode:
 
-  SET massa TO 600kg
-  SET percepatan TO 2m/s2
+  SET massa TO 600
+  SET percepatan TO 2
   COMPUTE resultan TO massa times percepatan
   SHOW resultan
 
@@ -35,7 +35,7 @@
   Algoritma:
   - deklarasikan pakaian yang akan dicuci berisi 20
   - deklarasikan pakaian yang ada di dalam mesin cuci berisi 0
-  - masukan semua pakaian yang ada di mesin cuci
+  - masukan semua pakaian yang ada ke mesin cuci
   - jika semua pakaian sudah dimasukkan ke dalam mesin dicuci
   - maka nyalakan mesin cuci
 

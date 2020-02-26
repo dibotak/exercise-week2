@@ -2,6 +2,15 @@ var tanggal = 20; // assign nilai variabel tanggal disini! (dengan angka antara 
 var bulan = 2; // assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
 var tahun = 2020; // assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
 
+switch (true) {
+  case (tanggal >= 1 && tanggal <= 31):
+    tanggal = tanggal;
+    break;
+  default:
+    console.log("Tanggal yang dimasukkan salah");
+    tanggal = false;
+}
+
 switch (bulan) {
   case 1:
     bulan = 'Januari';
@@ -40,7 +49,19 @@ switch (bulan) {
     bulan = 'Desember';
     break;
   default:
-    console.log('Anda salah memasukkan bulan');
+    console.log("Bulan yang dimasukkan salah");
+    bulan = false;
 }
 
-console.log(`${tanggal} ${bulan} ${tahun}`);
+switch (true) {
+  case (tahun >= 1900 && tahun <= 2200):
+    tahun = tahun;
+    break;
+  default:
+    console.log("Tahun yang dimasukkan salah");
+    tahun = false;
+}
+
+if (tanggal && bulan && tahun) {
+  console.log(`${tanggal} ${bulan} ${tahun}`);
+}
